@@ -16,7 +16,6 @@
     "@types/react-helmet": "5.0.14",
     "autoprefixer": "9.7.1",
     "cssnano": "4.1.10",
-
     "gatsby": "2.17.13",
     "gatsby-image": "2.2.32",
     "gatsby-plugin-manifest": "2.2.27",

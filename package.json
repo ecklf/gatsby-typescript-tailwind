@@ -2,10 +2,9 @@
   "name": "gatsby-typescript-tailwind",
   "private": false,
   "description": "A gatsby starter kit using TypeScript and Tailwind CSS",
-  "version": "0.1.3",
+  "version": "0.1.7",
   "author": "Florentin Eckl <ecklf@icloud.com>",
   "dependencies": {
-    "prop-types": "15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-helmet": "5.2.1"
@@ -14,27 +13,35 @@
     "@types/react": "16.9.11",
     "@types/react-dom": "16.9.4",
     "@types/react-helmet": "5.0.14",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
     "autoprefixer": "9.7.1",
+    "babel-eslint": "^10.0.3",
     "cssnano": "4.1.10",
-    "gatsby": "2.17.13",
-    "gatsby-image": "2.2.32",
-    "gatsby-plugin-manifest": "2.2.27",
-    "gatsby-plugin-offline": "3.0.20",
-    "gatsby-plugin-postcss": "2.1.14",
+    "gatsby": "2.17.15",
+    "gatsby-image": "2.2.33",
+    "gatsby-plugin-manifest": "2.2.28",
+    "gatsby-plugin-offline": "3.0.21",
+    "gatsby-plugin-postcss": "2.1.15",
+    "gatsby-plugin-react-helmet": "3.1.15",
+    "gatsby-plugin-sharp": "2.3.0",
+    "gatsby-plugin-typescript": "2.1.18",
+    "gatsby-source-filesystem": "2.1.37",
+    "gatsby-transformer-sharp": "2.3.5",
+    "eslint": "^6.6.0",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-flowtype": "^3.13.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "gatsby-plugin-eslint": "2.0.8",
     "gatsby-plugin-purgecss": "4.0.1",
-    "gatsby-plugin-react-helmet": "3.1.14",
-    "gatsby-plugin-sharp": "2.2.38",
-    "gatsby-plugin-tslint": "0.0.2",
-    "gatsby-plugin-typescript": "2.1.17",
-    "gatsby-source-filesystem": "2.1.36",
-    "gatsby-transformer-sharp": "2.3.4",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
     "prettier": "1.19.1",
     "tailwindcss": "1.1.3",
-    "tslint": "5.20.1",
-    "tslint-config-prettier": "1.18.0",
-    "tslint-loader": "3.5.4",
-    "tslint-plugin-prettier": "2.0.1",
-    "tslint-react": "4.1.0",
     "typescript": "3.7.2"
   },
   "keywords": [
@@ -47,10 +54,10 @@
   "license": "MIT",
   "scripts": {
     "type-check": "tsc --noEmit",
-    "lint": "tslint --project .",
+    "lint": "eslint . --ext ts,tsx",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
@@ -61,5 +68,21 @@
   },
   "bugs": {
     "url": "https://github.com/impulse/gatsby-typescript-tailwind/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

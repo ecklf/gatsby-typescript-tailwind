@@ -39,6 +39,8 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "gatsby-plugin-eslint": "2.0.8",
     "gatsby-plugin-purgecss": "4.0.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
     "prettier": "1.19.1",
     "tailwindcss": "1.1.3",
     "typescript": "3.7.2"
@@ -67,5 +69,21 @@
   },
   "bugs": {
     "url": "https://github.com/impulse/gatsby-typescript-tailwind/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

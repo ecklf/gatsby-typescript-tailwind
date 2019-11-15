@@ -1,0 +1,23 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Jarrku",
+      "name": "Simon VDB",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7694752?v=4",
+      "profile": "https://github.com/Jarrku",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "gatsby-typescript-tailwind",
+  "projectOwner": "impulse",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}

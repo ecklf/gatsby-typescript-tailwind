@@ -2,7 +2,7 @@
   "name": "gatsby-typescript-tailwind",
   "private": false,
   "description": "A gatsby starter kit using TypeScript and Tailwind CSS",
-  "version": "0.1.80",
+  "version": "0.1.81",
   "author": "Florentin Eckl <ecklf@icloud.com>",
   "dependencies": {
     "react": "16.12.0",
@@ -21,7 +21,7 @@
     "gatsby": "2.18.22",
     "gatsby-image": "2.2.38",
     "gatsby-plugin-manifest": "2.2.37",
-    "gatsby-plugin-offline": "3.0.31",
+    "gatsby-plugin-offline": "3.0.32",
     "gatsby-plugin-postcss": "2.1.19",
     "gatsby-plugin-react-helmet": "3.1.21",
     "gatsby-plugin-sharp": "2.3.13",

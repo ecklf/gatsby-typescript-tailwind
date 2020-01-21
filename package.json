@@ -2,7 +2,7 @@
   "name": "gatsby-typescript-tailwind",
   "private": false,
   "description": "A gatsby starter kit using TypeScript and Tailwind CSS",
-  "version": "0.1.93",
+  "version": "0.1.94",
   "author": "Florentin Eckl <ecklf@icloud.com>",
   "dependencies": {
     "react": "16.12.0",
@@ -38,7 +38,7 @@
     "eslint-plugin-react-hooks": "2.3.0",
     "gatsby-plugin-eslint": "2.0.8",
     "gatsby-plugin-purgecss": "4.0.1",
-    "husky": "4.1.0",
+    "husky": "4.2.0",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
     "tailwindcss": "1.1.4",

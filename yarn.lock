@@ -5757,10 +5757,10 @@ gatsby-plugin-sharp@2.4.13:
     svgo "1.3.2"
     uuid "^3.4.0"
 
-gatsby-plugin-typescript@2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.2.4.tgz#6f23f2d37b8e17bb270f407132d0cf0221edc0fe"
-  integrity sha512-wIhuL+9Qd/Km8yYCBAZMqcacFHzGqQIqwL3qf33Dni442BtL9bfsSWXu7iQ6adRULJnFagDyMuRex8lK6IcKrA==
+gatsby-plugin-typescript@2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.2.5.tgz#60d136ed9ce02dc05054f987934bfee1b0cca97e"
+  integrity sha512-C17SW9tW08xUDl6K6niwY0FUi4INMVb5n29+6QwMGJw4Nxrztt3l99C6rKGR4qogsNjNEW0T/xRp2ehuHY/9rw==
   dependencies:
     "@babel/core" "^7.8.7"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.8.3"
@@ -5836,10 +5836,10 @@ gatsby-transformer-sharp@2.3.19:
     semver "^5.7.1"
     sharp "^0.23.4"
 
-gatsby@2.19.44:
-  version "2.19.44"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.19.44.tgz#5ab3c8a92c8c207069cfb1c3a644608c537e2c41"
-  integrity sha512-sPqIzBsWFFl7XMs+LzcJdAsFAguRBz3AGyuHYWrlYK/LF6Zu/3BQPwDTXv3N3UdtXg0dN2xnrE0weqgAzSGexg==
+gatsby@2.19.45:
+  version "2.19.45"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.19.45.tgz#6a90275ea4c86bcf3916cb62d1446202c98b3adb"
+  integrity sha512-MyhgdrmKWBzYVKZTv21sQza1VNAA3NHWIXVqKtgfKGRvZ6wjiiZLElX9vYbQFXfIpoUrncDr3CDVuhEOqd7qnw==
   dependencies:
     "@babel/code-frame" "^7.8.3"
     "@babel/core" "^7.8.7"

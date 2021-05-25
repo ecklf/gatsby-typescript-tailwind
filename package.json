@@ -54,6 +54,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ext ts,tsx",
     "build": "gatsby build",
